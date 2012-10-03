@@ -42,6 +42,7 @@ def parsePage(pageNum):
         except psycopg2.IntegrityError:
             print("\t ! Entry already exists")
             continue
+    print("Finished page number " + str(pageNum) + "!")
         
         
 
